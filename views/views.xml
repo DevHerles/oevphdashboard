@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="oevphdashboard.list">
+      <field name="name">oevphdashboard list</field>
+      <field name="model">oevphdashboard.oevphdashboard</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="oevphdashboard.action_window">
+      <field name="name">oevphdashboard window</field>
+      <field name="res_model">oevphdashboard.oevphdashboard</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="oevphdashboard.action_server">
+      <field name="name">oevphdashboard server</field>
+      <field name="model_id" ref="model_oevphdashboard_oevphdashboard"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="oevphdashboard" id="oevphdashboard.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="oevphdashboard.menu_1" parent="oevphdashboard.menu_root"/>
+    <menuitem name="Menu 2" id="oevphdashboard.menu_2" parent="oevphdashboard.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="oevphdashboard.menu_1_list" parent="oevphdashboard.menu_1"
+              action="oevphdashboard.action_window"/>
+    <menuitem name="Server to list" id="oevphdashboard" parent="oevphdashboard.menu_2"
+              action="oevphdashboard.action_server"/>
+    -->
+  </data>
+</odoo>
